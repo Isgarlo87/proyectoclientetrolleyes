@@ -63,9 +63,9 @@
                             <div class="form-group" id="codigo-group"
                                  ng-class="{'has-error':(outerForm.codigo.$error.pattern && !outerForm.codigo.$pristine) ||
                                                      (outerForm.codigo.$error.required && !outerForm.codigo.$pristine)}">
-                                <label class="control-label col-sm-2" for="dni">
+                                <label class="control-label col-sm-2" for="codigo">
                                     <span ng-show="true">*</span>
-                                    DNI
+                                    Cod.
                                 </label>
                                 <div class="control col-sm-2">
                                     <input ng-model="bean.codigo"
@@ -96,7 +96,7 @@
                                            class="form-control"
                                            id="descripcion"
                                            name="descripcion"
-                                           ng-pattern="/^([A-Z]{1}[a-zñáéíóúàèò][0-9]+[\s]*)+$/"
+                                           ng-pattern="/^([A-Z]{1}(([a-zñáéíóúàèò]?)+([0-9]?)+[\s]*))+$/"
                                            placeholder="Nombre"
                                            maxlength="100"
                                            ng-required="true"
@@ -137,9 +137,9 @@
                                     <input ng-model="bean.precio"
                                            type="text"
                                            class="form-control"
-                                           id="segundo_apellido"
-                                           name="segundo_apellido"
-                                           ng-pattern="/^([0-9]{1}[0-9]+*)+$/"
+                                           id="precio"
+                                           name="precio"
+                                           ng-pattern="/^([0-9]{1})[0-9]+$/"
                                            placeholder="Precio"
                                            maxlength="11"
                                            ng-required="true"
