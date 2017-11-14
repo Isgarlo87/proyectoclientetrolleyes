@@ -42,6 +42,9 @@ moduloServicios.factory('objectService', function () {
                 case "producto":
                     return 'fa fa-cubes ';
                     break;
+                case "lineapedido":
+                    return 'fa fa-bookmark ';
+                    break;
                 default:
                     return null;
             }
@@ -59,6 +62,9 @@ moduloServicios.factory('objectService', function () {
                     break;
                 case "producto":
                     return "Producto";
+                    break;
+                case "lineapedido":
+                    return 'Linea de pedido ';
                     break;
                 default:
                     return null;
