@@ -97,7 +97,7 @@
                                                             Selecciona filtro:
                                                         </label>
                                                         <select class="navbar-form navbar-left" ng-model="filterType" convert-to-number id="filterSelection">
-                                                            <option value="0">Filtrar por código o descripción</option>
+                                                            <option value="0">Filtrar por código o nombre</option>
                                                             <option value="1">Filtrar por id, existencias o precio</option>                                                                                        
                                                         </select>
                                                     </form>
@@ -170,7 +170,7 @@
                                                     <a ng-click="doorder('id', 'desc')"><i class="glyphicon glyphicon-arrow-down"></i></a>
                                                 </th>
                                                 <th ng-show="visibles.codigo" class="text-center">
-                                                    <label>DNI</label><br/>
+                                                    <label>Cod.</label><br/>
                                                     <a ng-click="doorder('codigo', 'asc')"><i class="glyphicon glyphicon-arrow-up"></i></a>
                                                     <a ng-click="doorder('codigo', 'desc')"><i class="glyphicon glyphicon-arrow-down"></i></a>
                                                 </th>
@@ -180,12 +180,12 @@
                                                     <a ng-click="doorder('descripcion', 'desc')"><i class="glyphicon glyphicon-arrow-down"></i></a>
                                                 </th>
                                                 <th ng-show="visibles.existencias" class="text-center">
-                                                    <label>Primer apellido</label><br/>
+                                                    <label>Existencias</label><br/>
                                                     <a ng-click="doorder('existencias', 'asc')"><i class="glyphicon glyphicon-arrow-up"></i></a>
                                                     <a ng-click="doorder('existencias', 'desc')"><i class="glyphicon glyphicon-arrow-down"></i></a>
                                                 </th>
                                                 <th ng-show="visibles.precio" class="text-center">
-                                                    <label>Segundo apellido</label><br/>
+                                                    <label>Precio</label><br/>
                                                     <a ng-click="doorder('precio', 'asc')"><i class="glyphicon glyphicon-arrow-up"></i></a>
                                                     <a ng-click="doorder('precio', 'desc')"><i class="glyphicon glyphicon-arrow-down"></i></a>
                                                 </th>                                             
