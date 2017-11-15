@@ -48,7 +48,7 @@ moduloPedido.controller('PedidoSelection1Controller',
                 $scope.visibles.id = true;
                 $scope.visibles.descripcion = true;
 
-                $scope.filterString = [{'name': 'descripcion', 'longname': 'Descripción'}];
+                $scope.filterDate = [{'name': 'fecha', 'longname': 'Fecha'}];
                 $scope.filterNumber = [{'name': 'id', 'longname': 'Identificador'}];
 
                 $scope.closeForm = function (id) {
