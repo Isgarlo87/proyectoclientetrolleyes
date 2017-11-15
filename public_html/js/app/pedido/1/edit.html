@@ -68,15 +68,12 @@
                                     Fecha
                                 </label>
                                 <div class="control col-sm-2">
-                                    <input ng-model="bean.fecha"
-                                           type="text"
-                                           class="form-control"
-                                           id="fecha"
-                                           name="fecha"
-                                           ng-pattern="^(?=\d)(?:(?!(?:(?:0?[5-9]|1[0-4])(?:\.|-|\/)10(?:\.|-|\/)(?:1582))|(?:(?:0?[3-9]|1[0-3])(?:\.|-|\/)0?9(?:\.|-|\/)(?:1752)))(31(?!(?:\.|-|\/)(?:0?[2469]|11))|30(?!(?:\.|-|\/)0?2)|(?:29(?:(?!(?:\.|-|\/)0?2(?:\.|-|\/))|(?=\D0?2\D(?:(?!000[04]|(?:(?:1[^0-6]|[2468][^048]|[3579][^26])00))(?:(?:(?:\d\d)(?:[02468][048]|[13579][26])(?!\x20BC))|(?:00(?:42|3[0369]|2[147]|1[258]|09)\x20BC))))))|2[0-8]|1\d|0?[1-9])([-.\/])(1[012]|(?:0?[1-9]))\2((?=(?:00(?:4[0-5]|[0-3]?\d)\x20BC)|(?:\d{4}(?:$|(?=\x20\d)\x20)))\d{4}(?:\x20BC)?)(?:$|(?=\x20\d)\x20))?((?:(?:0?[1-9]|1[012])(?::[0-5]\d){0,2}(?:\x20[aApP][mM]))|(?:[01]\d|2[0-3])(?::[0-5]\d){1,2})?$"
-                                           placeholder="Fecha"
-                                           maxlength="100"
-                                           />
+                                    <date-time-picker
+                                        name="'fecha'"
+                                        required="true"
+                                        model="bean.fecha"
+                                        form="outerForm">
+                                    </date-time-picker>
                                     <span class="help-block" ng-if="!outerForm.fecha.$pristine && outerForm.fecha.$error.pattern">El campo no tiene formato adecuado: Introduce una fecha válida.</span>
                                 </div>
                             </div>
@@ -109,16 +106,11 @@
                                     * Tiene IVA
                                 </label>
                                 <div class="control col-sm-3">
-                                    <input ng-model="bean.tiene_iva" 
-                                           type="text"
-                                           class="form-control"
-                                           id="tiene_iva"
-                                           name="tiene_iva"
-                                           ng-pattern="^([Tt][Rr][Uu][Ee]|[Ff][Aa][Ll][Ss][Ee])$"
-                                           placeholder="Tiene IVA"
-                                           maxlength="5"
-                                           ng-required="true"
-                                           />
+                                     <input  
+                                        ng-model="bean.tiene_iva" 
+                                        type="checkbox" 
+                                        id="tiene_iva" 
+                                        name="tiene_iva">
                                     <span class="help-block" ng-if="!outerForm.existencias.$pristine && outerForm.existencias.$error.required">El campo es obligatorio</span>
                                     <span class="help-block" ng-if="!outerForm.existencias.$pristine && outerForm.existencias.$error.pattern">El campo no tiene formato adecuado: Tiene IVA solo puede ser True o False.</span>
                                 </div>
