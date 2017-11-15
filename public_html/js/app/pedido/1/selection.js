@@ -28,10 +28,10 @@
 
 'use strict';
 
-moduloTipousuario.controller('TipousuarioSelection1Controller',
+moduloPedido.controller('PedidoSelection1Controller',
         ['$scope', '$uibModalInstance', 'serverCallService', '$location', 'toolService',
             function ($scope, $modalInstance, serverCallService, $location, toolService) {
-                $scope.ob = 'tipousuario';
+                $scope.ob = 'pedido';
                 $scope.op = "selection";
                 //---
                 $scope.numpage = 1;
