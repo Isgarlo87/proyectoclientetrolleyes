@@ -34,7 +34,7 @@
             <div class="col-lg-12">
                 <div class="panel panel-default">
                     <div class="panel-heading">
-                        <header ob="ob" title="'Alta de' + objectService.getName(ob)"></header>
+                        <header ob="ob" title="'Alta de ' + objectService.getName(ob)"></header>
                     </div>
                     <div class="panel-body">
                         <div class="alert alert-success" role="alert" ng-if="debugging">
@@ -65,7 +65,7 @@
                                                      (outerForm.fecha.$error.required && !outerForm.fecha.$pristine)}">
                                 <label class="control-label col-sm-2" for="fecha">
                                     <span ng-show="true">*</span>
-                                    *Fecha
+                                    Fecha
                                 </label>
                                 <div class="control col-sm-2">
                                     <input ng-model="bean.fecha"
