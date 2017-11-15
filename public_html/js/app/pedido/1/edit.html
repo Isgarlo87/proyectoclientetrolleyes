@@ -98,7 +98,7 @@
                                            name="iva"
                                            ng-pattern="/^([A-Za-z])(([A-Za-zñáéíóúàèò]?)+([0-9]?)+([\s]?))+$/"
                                            placeholder="IVA"
-                                           maxlength="5"
+                                           maxlength="3"
                                            />
                                     <span class="help-block" ng-if="!outerForm.iva.$pristine && outerForm.iva.$error.pattern">El campo no tiene formato adecuado: IVA es un valor numérico.</span>
                                 </div>
@@ -118,7 +118,7 @@
                                            name="tiene_iva"
                                            ng-pattern="/^([0-9])+$/"
                                            placeholder="Tiene IVA"
-                                           maxlength="2"
+                                           maxlength="5"
                                            ng-required="true"
                                            />
                                     <span class="help-block" ng-if="!outerForm.existencias.$pristine && outerForm.existencias.$error.required">El campo es obligatorio</span>
