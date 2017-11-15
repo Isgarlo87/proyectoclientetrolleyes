@@ -88,4 +88,3 @@ moduloPedido.controller('PedidoXusuarioNew1Controller',
                 };
             }
         ]);
-
