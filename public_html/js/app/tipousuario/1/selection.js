@@ -48,6 +48,9 @@ moduloTipousuario.controller('TipousuarioSelection1Controller',
                 $scope.visibles.id = true;
                 $scope.visibles.descripcion = true;
 
+                $scope.filterString = [{'name': 'descripcion', 'longname': 'Descripción'}];
+                $scope.filterNumber = [{'name': 'id', 'longname': 'Identificador'}];
+                
                 $scope.closeForm = function (id) {
                     $modalInstance.close(id);
                 };
