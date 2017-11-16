@@ -6,22 +6,23 @@
 
 'use strict';
 
-moduloUsuario.controller('UsuarioXtipousuarioNew1Controller',
+moduloLinea_pedido.controller('Linea_pedidoXpedidoNew1Controller',
         ['$scope', '$routeParams', '$location', 'serverCallService', '$filter', '$uibModal', 'sessionService', '$route', 'toolService', 'constantService', 'objectService',
             function ($scope, $routeParams, $location, serverCallService, $filter, $uibModal, sessionService, $route, toolService, constantService, objectService) {
-                $scope.ob = "usuario";
-                $scope.op = "newXtipousuario";
+                $scope.ob = "linea_pedido";
+                $scope.op = "newXpedido";
                 $scope.profile = 1;
                 //---
                 $scope.status = null;
                 $scope.debugging = constantService.debugging();
                 //$scope.url = $scope.ob + '/' + $scope.profile + '/' + $scope.op;
                 //---
-                $scope.xob = "tipousuario";
-                $scope.xid = $routeParams.id_tipousuario;
+                $scope.xob = "pedido";
+                $scope.xid = $routeParams.id_pedido;
                 //--
                 $scope.bean = {};
-                $scope.bean.obj_tipousuario = {"id": $scope.xid};
+                $scope.bean.obj_pedido = {"id": $scope.xid};
+                $scope.bean.obj_producto = {"id": 0};
                 //---
                 $scope.objectService = objectService;
                 //---
@@ -29,7 +30,7 @@ moduloUsuario.controller('UsuarioXtipousuarioNew1Controller',
                     if (response.status == 200) {
                         if (response.data.status == 200) {
                             $scope.status = null;
-                            $scope.tipousuariobean = response.data.json;
+                            $scope.pedidobean = response.data.json;
                         } else {
                             $scope.status = "Error en la recepción de datos del servidor";
                         }
