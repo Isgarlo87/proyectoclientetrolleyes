@@ -91,8 +91,9 @@ trolleyes.config(['$routeProvider', function ($routeProvider) {
         $routeProvider.when('/linea_pedido/1/newXproducto/:id_producto', {templateUrl: 'js/app/linea_pedido/1/Xproducto/new.html', controller: 'Linea_pedidoXproductoNew1Controller', resolve: {auth: authenticationAdministratorPromise}});
         //--
         $routeProvider.when('/linea_pedido/2/view/:id', {templateUrl: 'js/app/linea_pedido/2/view.html', controller: 'Linea_pedidoView2Controller', resolve: {auth: authenticationClientPromise}});
-        $routeProvider.when('/linea_pedido/2/plist/:page?/:rpp?', {templateUrl: 'js/app/linea_pedido/2/plist.html', controller: 'Linea_pedidoPList2Controller', resolve: {auth: authenticationClientPromise}});        
-        
+        $routeProvider.when('/linea_pedido/2/plist/:page?/:rpp?', {templateUrl: 'js/app/linea_pedido/2/plist.html', controller: 'Linea_pedidoPList2Controller', resolve: {auth: authenticationClientPromise}});               
+        //--
+        $routeProvider.when('/carrito/2/plist/:page?/:rpp?', {templateUrl: 'js/app/carrito/2/plist.html', controller: 'CarritoPList2Controller', resolve: {auth: authenticationClientPromise}});
         //--
         $routeProvider.otherwise({redirectTo: '/'});
     }]);
