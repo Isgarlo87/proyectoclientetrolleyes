@@ -80,7 +80,9 @@ and open the template in the editor.
                                         reference="'pedido'"
                                         profile="profile"
                                         description="['id']"
-                                        required="true">
+                                        required="true"
+                                        >
+                                        
                                     </foreign-key>
                                     <span class="help-block" ng-if="!outerForm.obj_pedido.$pristine && outerForm.obj_pedido.$error.required">El campo es obligatorio</span>
                                     <span class="help-block" ng-if="!outerForm.obj_pedido.$pristine && outerForm.obj_pedido.$error.exists">El tipo de usuario no existe</span>
@@ -100,7 +102,9 @@ and open the template in the editor.
                                         reference="'producto'"
                                         profile="profile"
                                         description="['descripcion']"
-                                        required="true">
+                                        required="true"
+                                        >
+                                        
                                     </foreign-key>
                                     <span class="help-block" ng-if="!outerForm.obj_producto.$pristine && outerForm.obj_producto.$error.required">El campo es obligatorio</span>
                                     <span class="help-block" ng-if="!outerForm.obj_producto.$pristine && outerForm.obj_producto.$error.exists">El tipo de usuario no existe</span>

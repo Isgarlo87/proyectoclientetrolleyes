@@ -37,7 +37,7 @@ and open the template in the editor.
                                 </div>
                             </div>
                             <!------------------------------------------------->
-                             <div class="form-group" id="cantidad-group"
+                            <div class="form-group" id="cantidad-group"
                                  ng-class="{'has-error':(outerForm.cantidad.$error.pattern && !outerForm.cantidad.$pristine) ||
                                                      (outerForm.cantidad.$error.required && !outerForm.cantidad.$pristine)}">
                                 <label class="control-label col-sm-2" for="iva">
@@ -59,7 +59,7 @@ and open the template in the editor.
                                     <span class="help-block" ng-if="!outerForm.cantidad.$pristine && outerForm.cantidad.$error.pattern">El campo no tiene formato adecuado: Los nombres deben comenzar con mayúsculas.</span>
                                 </div>
                             </div>
-                            
+
                             <!------------------------------------------------->
                             <div class="form-group" id="obj_pedido-group"
                                  ng-class="{'has-error': outerForm.obj_pedido.$error.exists}">
@@ -74,13 +74,14 @@ and open the template in the editor.
                                         reference="'pedido'"
                                         profile="profile"
                                         description="['id']"
-                                        required="true">
+                                        required="true"
+                                        >
                                     </foreign-key>
                                     <span class="help-block" ng-if="!outerForm.obj_pedido.$pristine && outerForm.obj_pedido.$error.required">El campo es obligatorio</span>
                                     <span class="help-block" ng-if="!outerForm.obj_pedido.$pristine && outerForm.obj_pedido.$error.exists">El tipo de usuario no existe</span>
                                 </div>
                             </div>
-                             <!------------------------------------------------->
+                            <!------------------------------------------------->
                             <div class="form-group" id="obj_producto-group"
                                  ng-class="{'has-error': outerForm.obj_producto.$error.exists}">
                                 <label class="control-label col-sm-2" for="obj_producto">
@@ -94,7 +95,8 @@ and open the template in the editor.
                                         reference="'producto'"
                                         profile="profile"
                                         description="['descripcion']"
-                                        required="true">
+                                        required="true">                                       
+
                                     </foreign-key>
                                     <span class="help-block" ng-if="!outerForm.obj_producto.$pristine && outerForm.obj_producto.$error.required">El campo es obligatorio</span>
                                     <span class="help-block" ng-if="!outerForm.obj_producto.$pristine && outerForm.obj_producto.$error.exists">El tipo de usuario no existe</span>
