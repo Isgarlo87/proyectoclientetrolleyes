@@ -31,7 +31,11 @@ and open the template in the editor.
 
 .spinner {
   width: 100px;
+  display: inline-block;
 }
 .spinner input {
   text-align: right;
+}
+.btn btn-default{
+display: inline-block;    
 }
