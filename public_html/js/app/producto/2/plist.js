@@ -34,7 +34,7 @@ moduloProducto.controller('ProductoPList2Controller',
                 $scope.profile = 2;
                 //---
                 $scope.status = null;
-                $scope.debugging = constantService.debugging();
+                //$scope.debugging = constantService.debugging();
                 $scope.url = $scope.ob + '/' + $scope.profile + '/' + $scope.op;
                 //----
                 $scope.numpage = toolService.checkDefault(1, $routeParams.page);
@@ -89,5 +89,3 @@ moduloProducto.controller('ProductoPList2Controller',
                 getDataFromServer();
             }
         ]);
-
-
